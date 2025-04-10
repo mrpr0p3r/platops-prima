@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-from model.user_def import User_definition, UserDefinition_Schema
 from model.people import People
 from base import Session, engine, Base
 from sqlalchemy.exc import SQLAlchemyError
