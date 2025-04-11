@@ -9,7 +9,7 @@ FROM python:3.13
 WORKDIR /app
 COPY --from=build /root/.local/lib/python3.13/site-packages /root/.local/lib/python3.13/site-packages
 
-COPY --from=build /root/.local /root/.local 
+COPY --from=build /root/.local /root/.local
 COPY . .
 ENV FLASK_APP=./index.py
 ENV PATH=/root/.local/bin:$PATH
